@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: #eee;
+}
+
+.app {
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #f5ba13;
+    display: flex;
+    padding: 16px 32px;
+    margin: 0 0 20px 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    color: #fff;
+    font-family: "McLaren", cursive;
+    font-weight: 200;
+}
+
+.body {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 15px 0;
+    color: #ccc;
+}
+
+button {
+    margin: 0;
+    padding: 5px 0;
+    display: inline-box;
+    width: 100px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #fabc05;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: right;
+}
+
+form button {
+    position: relative;
+    border-radius: 50%;
+    top: 38px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+form {
+    background-color: white;
+    width: 480px;
+    min-height: 146px;
+    border-radius: 20px;
+    border: 2px solid #d3d3d3;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    width: 100%;
+    padding: 0 0 15px 2px;
+    font-size: 25px;
+    font-weight: bold;
+    border: 0;
+}
+
+form textarea {
+    width: 100%;
+    height: 78px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: 0;
+    resize: none;
+}
+
+.notes-container {
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.note {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    min-height: 100px;
+
+    padding: 10px;
+    width: 240px;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.note h1 {
+    font-size: 1.3em;
+    margin: 0 0 6px 0;
+    font-weight: bold;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    text-align: left;
+}
+.note p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    text-align: left;
+}
