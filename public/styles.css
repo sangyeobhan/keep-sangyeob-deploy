@@ -113,19 +113,16 @@ form button {
 }
 
 .notes-container {
-    padding: 20px 0;
+    padding: 20px 20px;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .note {
+    float: left;
     background: #fff;
     border-radius: 7px;
     box-shadow: 0 2px 5px #ccc;
     min-height: 100px;
-
     padding: 10px;
     width: 240px;
     margin: 16px;
