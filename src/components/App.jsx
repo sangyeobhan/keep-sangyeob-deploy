@@ -20,7 +20,7 @@ export default function App() {
     return (
         <div className="app">
             <Header />
-            <div className="body">
+            <div className="articles">
                 <InputForm addNote={addNote} />
                 <div className="notes-container">
                     {noteArray.map((note) => {
@@ -28,7 +28,7 @@ export default function App() {
                             <Note
                                 key={note.key}
                                 note={note}
-                                hanleDeleteButton={() => deleteNote(note.key)}
+                                deleteNote={deleteNote}
                             />
                         );
                     })}

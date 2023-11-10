@@ -45,10 +45,8 @@ export default function InputForm({ addNote }) {
                 placeholder="Enter content..."
                 value={note.content}
                 onChange={handleChange}
-            ></textarea>
-            <div className="button-container">
-                <button>Add</button>
-            </div>
+            ></textarea>{" "}
+            <button>Add</button>
         </form>
     );
 }

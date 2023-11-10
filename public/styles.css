@@ -33,7 +33,7 @@ header h1 {
     font-weight: 200;
 }
 
-.body {
+.articles {
     flex: 1;
     display: flex;
     flex-flow: column;
@@ -64,24 +64,20 @@ button {
     border: none;
 }
 
+button:hover {
+    opacity: 0.8;
+}
+
 .button-container {
     display: flex;
     justify-content: right;
 }
 
-form button {
-    position: relative;
-    border-radius: 50%;
-    top: 38px;
-    right: 15px;
-    width: 50px;
-    height: 50px;
-}
-
 form {
+    position: relative;
     background-color: white;
     width: 480px;
-    min-height: 146px;
+    height: auto;
     border-radius: 20px;
     border: 2px solid #d3d3d3;
     padding: 15px;
@@ -99,11 +95,21 @@ form input {
 
 form textarea {
     width: 100%;
-    height: 78px;
+    height: 100px;
     font-size: 20px;
     margin-bottom: 10px;
     border: 0;
     resize: none;
+    flex-grow: 1;
+}
+
+form button {
+    position: absolute;
+    border-radius: 50%;
+    bottom: -26px;
+    right: 12px;
+    width: 55px;
+    height: 55px;
 }
 
 .notes-container {
